@@ -20,4 +20,24 @@ public abstract class AbstractDefaultException extends RuntimeException {
     // 异常信息返回
 
 
+    public AbstractDefaultException() {
+        super();
+    }
+
+    public AbstractDefaultException(String message) {
+        super(message);
+    }
+
+    public AbstractDefaultException(String message, Throwable cause) {
+        super(message, cause);
+    }
+
+    public AbstractDefaultException(Throwable cause) {
+        super(cause);
+    }
+
+    protected AbstractDefaultException(String message, Throwable cause, boolean enableSuppression, boolean writableStackTrace) {
+        super(message, cause, enableSuppression, writableStackTrace);
+    }
+
 }
